@@ -36,6 +36,11 @@ namespace ArheoloskiNaog.Models
 
         [DisplayName("Опис")]
         public string Opis { get; set; }
+
+        public String Koordinati { get; set; }
+
+        [DisplayName("Работно време")]
+        public String RabotnoVreme { get; set; }
     }
 
     public partial class ArheologijaDBContext : DbContext
