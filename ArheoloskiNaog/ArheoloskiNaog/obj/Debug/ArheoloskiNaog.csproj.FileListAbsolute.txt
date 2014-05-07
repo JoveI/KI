@@ -53,6 +53,38 @@ C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.dll
 C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.SqlServer.dll
 C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.xml
 C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.SqlServer.xml
+<<<<<<< HEAD
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.dll.config
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.pdb
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\Antlr3.Runtime.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.SqlServer.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\Newtonsoft.Json.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Helpers.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Mvc.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Optimization.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Razor.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Razor.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\WebGrease.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.SqlServer.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Helpers.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Mvc.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Optimization.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Razor.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Razor.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\Newtonsoft.Json.xml
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\Antlr3.Runtime.pdb
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.csprojResolveAssemblyReference.cache
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.dll
+C:\Users\jove\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.pdb
+=======
 C:\Users\Ace\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.dll.config
 C:\Users\Ace\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.dll
 C:\Users\Ace\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.pdb
@@ -83,3 +115,4 @@ C:\Users\Ace\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\bin\Antlr3.Runtim
 C:\Users\Ace\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.csprojResolveAssemblyReference.cache
 C:\Users\Ace\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.dll
 C:\Users\Ace\Documents\GitHub\KI\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.pdb
+>>>>>>> 086d5ef4094ede0d8ac136dc1b832a8c75ac632e
