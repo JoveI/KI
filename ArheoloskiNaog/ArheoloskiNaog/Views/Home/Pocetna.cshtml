@@ -1,0 +1,391 @@
+﻿@model IEnumerable<ArheoloskiNaog.Models.Lokalitet>
+    
+@{
+    Layout = null;
+}
+    @helper NavigationLink(string linkText, string actionName, string controllerName)
+{
+    if (ViewContext.RouteData.GetRequiredString("action").Equals(actionName, StringComparison.OrdinalIgnoreCase) &&
+       ViewContext.RouteData.GetRequiredString("controller").Equals(controllerName, StringComparison.OrdinalIgnoreCase))
+    {
+        <span style="color:#ff0000">@linkText</span>
+    }
+    else
+    {
+        @Html.ActionLink(linkText, actionName, controllerName);
+    }
+}
+    <!DOCTYPE HTML>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
+
+        <title>Почетна</title>
+
+        <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+        <!-- Bootstrap -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+        <!-- Icons -->
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+        <!-- Custom styles -->
+
+        <link href="~/Content/styles.css" rel="stylesheet" />
+
+        <!--[if lt IE 9]> <script src="~/Scripts/html5shiv.js"></script> <![endif]-->
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdFRE3h1jXhfAyHGNOM_6v3sn5wNqbgg8&sensor=false"></script>
+
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+            var lokaliteti = [['Кокино', 42.263064, 21.953763, 1],
+                              ['Стоби', 41.5521409, 21.975432, 2],
+                              ['Хераклеа', 41.011, 21.342444, 3],
+                              ['Теракота-Виница', 41.8808324, 22.5105464, 4],
+                              ['Маркови Кули', 41.361592, 21.53826, 5],
+                              ['Плаошник', 41.112736, 20.790491, 6],
+                              ['Баргала', 41.7983909, 22.2899819, 7],
+                              ['Скопско Кале', 41.9990903, 21.4248902, 8],
+                              ['Заливот на коските', 41.0166743, 20.8084626, 9],
+                              ['Тумба Маџари', 42.001809, 21.504911, 10],
+                              ['Самоилова Тврдина', 41.115427, 20.79139, 11],
+                              ['Стибера', 41.2434936, 21.397522, 12]
+            ];
+            function init() {
+
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 8,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(41.6000, 21.7000), // Makedonija
+
+                    // How you would like to style the map.
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{ "featureType": "landscape", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "stylers": [{ "hue": "#00aaff" }, { "saturation": -100 }, { "gamma": 2.15 }, { "lightness": 12 }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "visibility": "on" }, { "lightness": 24 }] }, { "featureType": "road", "elementType": "geometry", "stylers": [{ "lightness": 57 }] }]
+                };
+
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('head');
+
+                // Create the Google Map using out element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                setMarkers(map, lokaliteti);
+
+            }
+            function setMarkers(map, lokaliteti) {
+                var img = {
+                    url: 'Images/PinMap4small.png',
+                    size: new google.maps.Size(26, 32),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(0, 32)
+
+                };
+                var shape = {
+                    coord: [1, 1, 1, 20, 18, 20, 18, 1],
+                    type: 'poly'
+                };
+                for (var i = 0; i < lokaliteti.length; i++) {
+                    var lok = lokaliteti[i];
+                    var myLatLng = new google.maps.LatLng(lok[1], lok[2]);
+
+                    var contentString = '<h4>Naslov</h4> <div id="ime" style="background-color: silver; float:left; clear: both;width:400px;">	<p>	Apo skopja</p></div><img src="http://travel2macedonia.com.mk/images/sights/23/heraklea-lynkestis.jpg" style="float:left; clear: both;width:200px;height:100px;" ><div id="opis" style="background-color: silver; float:left; clear: both;width:400px;">	<p>I ovde nesto</p> </div>';
+
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        icon: img,
+                        shape: shape,
+                        title: lok[0],
+                        zIndex: lok[3]
+                    });
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+
+                    google.maps.event.addListener(marker, 'click', function () {
+                        infoWindow.open(map, this);
+                    });
+                }
+            }
+
+
+        </script>
+
+        <style>
+            img {
+                max-width: none;
+            }
+        </style>
+    </head>
+    <body class="home">
+
+        <header id="header">
+            <div id="head" style="height:400px;border-top:solid 5px silver;">
+
+
+            </div>
+
+            <nav class="navbar navbar-default navbar-sticky">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse">
+
+                        <ul class="nav navbar-nav">
+                            <li>@NavigationLink("Почетна", "Index", "Home")</li>
+                            <li>@NavigationLink("Локалитети", "Index", "Lokalitet")</li>
+                            <li>@NavigationLink("За нас", "About", "Home")</li>
+                            <li>@NavigationLink("Контакт", "Contact", "Home")</li>
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </header>
+
+        <main id="main">
+
+            <div class="container">
+
+                <div class="row section topspace">
+                    <div class="col-md-12">
+                        <p class="lead text-center text-muted" style="font-family:'Bahamas Cirilica'">Iljadnici godini od istorijata na <a>Makedonija </a> ostavila zad sebe kulturno bogatstvo i istoriski zna~ajni spomenici.</p>
+                    </div>
+                </div> <!-- / section -->
+            </div>
+            <!--<div class="row section featured topspace">
+                <h2 class="section-title"><span>Services</span></h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <h3 class="text-center">Custom website design</h3>
+                        <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
+                        <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <h3 class="text-center">Wordpress integration</h3>
+                        <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
+                        <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <h3 class="text-center">Application development</h3>
+                        <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
+                        <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <h3 class="text-center">SEO &amp; SEM services</h3>
+                        <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
+                        <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+                    </div>
+                </div>
+            </div>-->
+            <!-- / section -->
+            <!-- <div class="row section recentworks topspace">
+
+                 <h2 class="section-title"><span>Recent Works</span></h2>
+
+                 <div class="thumbnails recentworks row">
+
+                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                         <a class="thumbnail" href="sidebar-right.html">
+                             <span class="img">
+                                 <img src="assets/images/s1.jpg" alt="">
+                                 <span class="cover"><span class="more">See details &rarr;</span></span>
+                             </span>
+                             <span class="title">Sample title - big data solutions</span>
+                         </a>
+                         <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a> | <a href="">Logotype</a></span>
+                         <h4></h4>
+                         <p></p>
+                     </div>
+
+                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                         <a class="thumbnail" href="sidebar-right.html">
+                             <span class="img">
+                                 <img src="assets/images/s1.jpg" alt="">
+                                 <span class="cover"><span class="more">See details &rarr;</span></span>
+                             </span>
+                             <span class="title">Pure ipsum - development services for people</span>
+                         </a>
+                         <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a></span>
+                         <h4></h4>
+                         <p></p>
+                     </div>
+
+                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                         <a class="thumbnail" href="sidebar-right.html">
+                             <span class="img">
+                                 <img src="assets/images/s1.jpg" alt="">
+                                 <span class="cover"><span class="more">See details &rarr;</span></span>
+                             </span>
+                             <span class="title">Lorem studios - interior and patio design</span>
+                         </a>
+                         <span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
+                         <h4></h4>
+                         <p></p>
+                     </div>
+
+                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                         <a class="thumbnail" href="sidebar-right.html">
+                             <span class="img">
+                                 <img src="assets/images/s1.jpg" alt="">
+                                 <span class="cover"><span class="more">See details &rarr;</span></span>
+                             </span>
+                             <span class="title">Pure ipsum - development services for people</span>
+                         </a>
+                         <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a></span>
+                         <h4></h4>
+                         <p></p>
+                     </div>
+
+                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                         <a class="thumbnail" href="sidebar-right.html">
+                             <span class="img">
+                                 <img src="assets/images/s1.jpg" alt="">
+                                 <span class="cover"><span class="more">See details &rarr;</span></span>
+                             </span>
+                             <span class="title">Lorem studios - interior and patio design</span>
+                         </a>
+                         <span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
+                         <h4></h4>
+                         <p></p>
+                     </div>
+
+                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                         <a class="thumbnail" href="sidebar-right.html">
+                             <span class="img">
+                                 <img src="assets/images/s1.jpg" alt="">
+                                 <span class="cover"><span class="more">See details &rarr;</span></span>
+                             </span>
+                             <span class="title">Lorem studios - interior and patio design</span>
+                         </a>
+                         <span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
+                         <h4></h4>
+                         <p></p>
+                     </div>
+                 </div>
+
+             </div>-->
+            <!-- /section -->
+            <!-- <div class="row section topspace">
+                 <div class="panel panel-cta">
+                     <div class="panel-body">
+                         <div class="col-lg-8">
+                             <p>
+                                 A simple, nice-looking <b>call to action box</b>. Boxing is about respect. getting it for yourself,
+                                 and taking it away from the other guy. no, this is mount everest.
+                             </p>
+                         </div>
+                         <div class="col-lg-4 text-right">
+                             <a href="http://www.gettemplate.com/downloads/initio.zip " class="btn btn-primary btn-lg">Download template</a>
+                         </div>
+                     </div>
+                 </div>
+             </div> -->
+            <!-- /section -->
+            @* <div class="row section clients topspace">
+                        <h2 class="section-title"><span>Clients</span></h2>
+                        <div class="col-lg-12">
+                            <p>
+                                <img src="assets/images/sample_clients.png" alt="">
+                            </p>
+                        </div>
+                    </div> <!-- /section -->
+
+                </div>	<!-- /container -->*@
+
+        </main>
+
+        @*<footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 widget">
+                            <h3 class="widget-title">Contact</h3>
+                            <div class="widget-body">
+                                <p>
+                                    +234 23 9873237<br>
+                                    <a href="mailto:#">some.email@somewhere.com</a><br>
+                                    <br>
+                                    234 Hidden Pond Road, Ashland City, TN 37015
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 widget">
+                            <h3 class="widget-title">Follow me</h3>
+                            <div class="widget-body">
+                                <p class="follow-me-icons">
+                                    <a href=""><i class="fa fa-twitter fa-2"></i></a>
+                                    <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+                                    <a href=""><i class="fa fa-github fa-2"></i></a>
+                                    <a href=""><i class="fa fa-facebook fa-2"></i></a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 widget">
+                            <h3 class="widget-title">Text widget</h3>
+                            <div class="widget-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 widget">
+                            <h3 class="widget-title">Form widget</h3>
+                            <div class="widget-body">
+                                <p>
+                                    +234 23 9873237<br>
+                                    <a href="mailto:#">some.email@somewhere.com</a><br>
+                                    <br>
+                                    234 Hidden Pond Road, Ashland City, TN 37015
+                                </p>
+                            </div>
+                        </div>
+
+                    </div> <!-- /row of widgets -->
+                </div>
+            </footer>
+
+            <footer id="underfooter">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6 widget">
+                            <div class="widget-body">
+                                <p>234 Hidden Pond Road, Ashland City, TN 37015 </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 widget">
+                            <div class="widget-body">
+                                <p class="text-right">
+                                    Copyright &copy; 2014, Your awesome name here<br>
+                                    Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div> <!-- /row of widgets -->
+                </div>
+            </footer>
+
+        *@
+
+        <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+
+
+        <script src="~/Scripts/template.js"></script>
+    </body>
+</html>

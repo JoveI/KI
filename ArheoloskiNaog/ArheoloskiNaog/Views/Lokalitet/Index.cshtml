@@ -1,0 +1,33 @@
+﻿@model IEnumerable<ArheoloskiNaog.Models.Lokalitet>
+
+@{
+    ViewBag.Title = "Локалитети";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<h4>Локалитети</h4>
+
+<br />
+
+<div class="thumbnails recentworks row">
+
+    @foreach (var item in Model)
+    {
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <a class="thumbnail" href="sidebar-right.html">
+                <span class="img">
+                    <img src="~/Images/Lokaliteti/@item.ImageUrl" alt="">
+                    <span class="cover"><span class="more">Види детали &rarr;</span></span>
+                </span>
+                <span class="title">@item.Ime - @item.Oblast</span>
+            </a>
+        </div>
+    }
+
+</div>

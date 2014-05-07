@@ -1,0 +1,55 @@
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.dll.config
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.pdb
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\Antlr3.Runtime.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\Microsoft.Web.Infrastructure.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\Newtonsoft.Json.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Helpers.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Mvc.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Optimization.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Razor.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Deployment.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Razor.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\WebGrease.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Helpers.xml
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Mvc.xml
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Optimization.xml
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Razor.xml
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.xml
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Deployment.xml
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Razor.xml
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\Newtonsoft.Json.xml
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\bin\Antlr3.Runtime.pdb
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.dll
+c:\users\martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.pdb
+C:\Users\Martin\documents\visual studio 2013\Projects\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.csprojResolveAssemblyReference.cache
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.dll.config
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\ArheoloskiNaog.pdb
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\Antlr3.Runtime.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\Newtonsoft.Json.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Helpers.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Mvc.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Optimization.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Razor.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Razor.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\WebGrease.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Helpers.xml
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Mvc.xml
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Optimization.xml
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.Razor.xml
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.xml
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\System.Web.WebPages.Razor.xml
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\Newtonsoft.Json.xml
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\Antlr3.Runtime.pdb
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\obj\Debug\ArheoloskiNaog.pdb
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.SqlServer.dll
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.xml
+C:\Users\jove\Desktop\ArheoloskiNaog\ArheoloskiNaog\bin\EntityFramework.SqlServer.xml
